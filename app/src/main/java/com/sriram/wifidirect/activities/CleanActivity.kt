@@ -34,7 +34,7 @@ import java.text.DecimalFormat
 const val PERMISSION_REQUEST_STORAGE_READ = 0
 
 const val PERMISSION_REQUEST_STORAGE_WRITE = 0
-const val WHATSAPP_FILES_LOCATION = "/Whatsapp/Media/"
+const val WHATSAPP_FILES_LOCATION = "/Android/media/com.whatsapp/WhatsApp/Media/"
 
 class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {
     var output: String? = null
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRes
         scrollable_content.adapter = adapter
         val file = File(Environment.getExternalStorageDirectory().toString() + WHATSAPP_FILES_LOCATION)
         documents_file_recyclerview = findViewById(R.id.recyclerview_files_types) as RecyclerView
-        images_rcview_recyclerview_ = findViewById(R.id.images_rcview) as RecyclerView
+        images_rcview_recyclerview_ = findViewById<RecyclerView>(R.id.images_rcview)
         setItems(image_item_card, "WhatsApp Images")
         readImages()
         setItems(document_item_card, "WhatsApp Documents")

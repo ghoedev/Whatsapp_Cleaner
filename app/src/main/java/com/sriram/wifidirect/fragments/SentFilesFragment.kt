@@ -30,7 +30,7 @@ import kotlinx.android.synthetic.main.fragment_sent_files.*
 import java.io.File
 import java.text.DecimalFormat
 
-const val FILES_FILE_LOCATION = "/Whatsapp/Media/"
+const val FILES_FILE_LOCATION = "/Android/media/com.whatsapp/WhatsApp/Media/"
 const val SENT_FILES_FOLDER = "/WhatsApp Images/Sent/"
 
 class SentFilesFragment : Fragment() {

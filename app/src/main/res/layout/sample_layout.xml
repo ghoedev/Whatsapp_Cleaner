@@ -211,19 +211,16 @@
         app:layout_constraintTop_toBottomOf="@+id/videos_item_card">
 
 
-
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="457dp"
             android:id="@+id/recyclerview_files_types"
             android:layout_marginStart="1dp"
             android:layout_marginEnd="1dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:listitem="@layout/audio_file_adapter"
+            app:layout_constraintTop_toTopOf="parent"
             app:spanCount="2"
             tools:itemCount="4"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:listitem="@layout/audio_file_adapter" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

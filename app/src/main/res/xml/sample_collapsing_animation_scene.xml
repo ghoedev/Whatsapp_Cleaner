@@ -37,7 +37,6 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            android:elevation="4dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             motion:layout_constraintBottom_toTopOf="@id/guideline_toolbar"

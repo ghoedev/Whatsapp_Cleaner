@@ -15,7 +15,7 @@ import com.sriram.sampletestapp.util.showSnackbar
 import com.sriram.wifidirect.R
 
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivitykot : AppCompatActivity() {
     private lateinit var layout: View
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +50,7 @@ class SplashActivity : AppCompatActivity() {
     private fun readWhatsappData() =
             if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 //    Toast.makeText(this@MainActivity, "Permission Granted", Toast.LENGTH_LONG).show()
-                intent= Intent(this@SplashActivity,MainActivity::class.java)
+                intent= Intent(this@SplashActivitykot,MainActivity::class.java)
                 startActivity(intent)
             } else {
                 requestCameraPermission()
